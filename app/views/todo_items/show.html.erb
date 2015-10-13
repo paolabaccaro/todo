@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @todo_item.description %>
+</p>
+
+<p>
+  <strong>—javascript­-engine=js:</strong>
+  <%= @todo_item.—javascript­-engine=js %>
+</p>
+
+<p>
+  <strong>­--stylesheet-­engine=css:</strong>
+  <%= @todo_item.­--stylesheet-­engine=css %>
+</p>
+
+<%= link_to 'Edit', edit_todo_item_path(@todo_item) %> |
+<%= link_to 'Back', todo_items_path %>

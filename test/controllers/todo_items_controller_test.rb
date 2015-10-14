@@ -18,7 +18,7 @@ class TodoItemsControllerTest < ActionController::TestCase
 
   test "should create todo_item" do
     assert_difference('TodoItem.count') do
-      post :create, todo_item: { description: @todo_item.description, ­--stylesheet-­engine=css: @todo_item.­--stylesheet-­engine=css, —javascript­-engine=js: @todo_item.—javascript­-engine=js }
+      post :create, todo_item: { description: @todo_item.description }
     end
 
     assert_redirected_to todo_item_path(assigns(:todo_item))
@@ -35,7 +35,7 @@ class TodoItemsControllerTest < ActionController::TestCase
   end
 
   test "should update todo_item" do
-    patch :update, id: @todo_item, todo_item: { description: @todo_item.description, ­--stylesheet-­engine=css: @todo_item.­--stylesheet-­engine=css, —javascript­-engine=js: @todo_item.—javascript­-engine=js }
+    patch :update, id: @todo_item, todo_item: { description: @todo_item.description }
     assert_redirected_to todo_item_path(assigns(:todo_item))
   end
 

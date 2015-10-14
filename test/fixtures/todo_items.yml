@@ -2,10 +2,6 @@
 
 one:
   description: MyString
-  —javascript­-engine=js: MyString
-  ­--stylesheet-­engine=css: MyString
 
 two:
   description: MyString
-  —javascript­-engine=js: MyString
-  ­--stylesheet-­engine=css: MyString

@@ -1,5 +1,3 @@
-require 'test_helper'
-
 class TodoItemsControllerTest < ActionController::TestCase
   setup do
     @todo_item = todo_items(:one)

@@ -1,11 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Todo Items</h1>
+<h1 class="col-md-12 col-md-offset-4">Listing Todo Items<small>   Welcome!</small></h1>
 
-<table>
+
+<img class="col-md-2 col-md-offset-5" src="http://www.canuckseo.com/wp-content/uploads/2014/08/check1.jpg" class="img-responsive" alt="Responsive image">
+
+
+<p class="col-md-12 col-md-offset-4">
+Always add your items by clicking on the link <kbd>New Todo item</kbd> below.<br>
+</p>
+<p class="col-md-12 col-md-offset-3">
+See the itens that you have created by clicking on the link <kbd>Show</kbd> and you can also <kbd>Edit</kbd> or <kbd>Destroy</kbd> them. Have fun!<br>
+</p>
+
+
+<blockquote class="blockquote-reverse">
+  <h4 class="col-md-12 col-md-offset-4">Welcome!</h4>
+</blockquote> 
+
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Description</th>
+      <th class="text-center">Description</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,10 +29,10 @@
   <tbody>
     <% @todo_items.each do |todo_item| %>
       <tr>
-        <td><%= todo_item.description %></td>
-        <td><%= link_to 'Show', todo_item %></td>
-        <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
-        <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="text-center"><%= todo_item.description %></td>
+        <td class="text-center"><%= link_to 'Show', todo_item %></td>
+        <td class="text-center"><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
+        <td class="text-center"><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +40,4 @@
 
 <br>
 
-<%= link_to 'New Todo item', new_todo_item_path %>
+<%= link_to 'New Todo item', new_todo_item_path, class: 'btn-lg btn-block btn-info col-md-offset-5' %>
